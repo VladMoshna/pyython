@@ -10,7 +10,26 @@ print(type(collection)) # Класс list
 items = [10, 12.3, "text", True] # погана практика
 
 fruits = ["avocado", "apple", "orange", "lemon", "pear"]
-print(fruits)
+print(", ".join(fruits))
+
+fruits.append("pineapple")
+print(", ".join(fruits))
+fruits.extend(["mandarin", "grapefruit"])
+print(", ".join(fruits))
+fruits.insert(4, "mango")
+print(", ".join(fruits))
+
+
+fruits.pop(5)
+print(", ".join(fruits))
+fruits.remove("lemon")
+print(", ".join(fruits))
+fruits.clear()
+print(", ".join(fruits))
+print(len(fruits))
+
+
+
 """
 print(fruits[0])
 print(fruits[1])
@@ -27,7 +46,6 @@ print(fruits[::-2])
 
 string = "text"
 string[2] = "u"
-"""
 
 fruits[1] = "mango"
 print(fruits)
@@ -51,3 +69,4 @@ print(names)
 print(type(names))
 print(", ".join(names))
 print(type(names))
+"""
